@@ -1,0 +1,117 @@
+body{
+    background-image: linear-gradient(120deg,#000000,#6d6d73,#000000);
+}
+.bord{
+    border-radius: 20px;
+    border: solid 0.5px ;
+    background-image: linear-gradient(20deg,#000000,#6d6d73,#000000);;
+    box-shadow: 3px 3px 3px  lightblue;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+margin-bottom: 10px   
+}
+ .title h3{
+    text-align: center;
+    margin: auto;
+    text-transform: capitalize ;
+    margin-top: -8px;
+    font-size:0.85em;
+    color: #292828;
+    text-shadow:1px 1px 1px #7c7a7abe, 0px 1.5px 2px #3f3f3f;
+    
+}
+.title p{
+    text-align: center;
+    margin-top: 3px;
+    
+}
+h2{
+    text-transform: capitalize;
+    
+}
+
+
+  
+
+.github{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 5px; 
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin-top: -17px;
+
+   
+}
+.place{
+    text-align: center;
+    margin-top: -15px;
+    
+    
+    
+}
+.obj p{
+    color: aliceblue;
+}
+hr.line{
+    border: 1px solid #ae8625;
+    margin-top: -15px;
+}
+.abt li{
+    color: aliceblue;
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 20px;
+  }
+
+  li {
+    position: relative; 
+    margin-bottom: 10px; 
+    color:whitesmoke;
+    /*font-size: px;*/}
+li::before {
+    content: ''; 
+    position: absolute;
+    left: -20px; 
+    top: 8px;
+    transform: translateY(-50%) rotate(45deg); 
+    width: 5px;
+    height: 5px;
+    background-color: #ae8625; 
+  }
+  .obj h2{
+    color: #bda46d;
+    
+  }
+  .abt h2{
+    color: #bda46d;
+
+  }
+  .proj h2{
+    color: #bda46d;
+
+  }
+.skill h2{
+    color: #bda46d;
+}
+.awardscon h2{
+        color:#bda46d;
+
+}
+  .portfolio p{
+    color: antiquewhite;
+  }
+  .web p{
+    color: antiquewhite;
+  }
+  .portfolio h3{
+    color:ghostwhite;
+  }
+  .web h3{
+    color: ghostwhite;
+  }
