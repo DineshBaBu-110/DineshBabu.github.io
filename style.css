@@ -1,5 +1,6 @@
 body{
     background-image: linear-gradient(120deg,#000000,#6d6d73,#000000);
+    
 }
 .bord{
     border-radius: 20px;
@@ -69,12 +70,12 @@ ul {
     padding-left: 20px;
   }
 
-  li {
+ .abt li {
     position: relative; 
     margin-bottom: 10px; 
     color:whitesmoke;
-    /*font-size: px;*/}
-li::before {
+  }
+ .abt li::before {
     content: ''; 
     position: absolute;
     left: -20px; 
@@ -83,6 +84,17 @@ li::before {
     width: 5px;
     height: 5px;
     background-color: #ae8625; 
+  }
+  /* project and certificates  */
+  .proj li{
+    position: relative; 
+    margin-bottom: 10px; 
+    color:whitesmoke;
+  }
+  .awards li{
+    position: relative; 
+    margin-bottom: 10px; 
+    color:rgb(223, 211, 211);
   }
   .obj h2{
     color: #bda46d;
@@ -118,7 +130,9 @@ li::before {
   .web h3{
     color: ghostwhite;
   }
-    .prog{
+  /* skill   */
+  /* this is perivious skill format  */
+    /* .prog{
       border:solid 0.5px ;
       border-width: 2px ;
       border-radius: 20px;
@@ -133,8 +147,10 @@ li::before {
     .prog h2{
       color: #000000;
       margin-top: 1px;
+
       
     }
+  
     .data{
       border:solid 0.5px ;
       border-width: 2px ;
@@ -176,13 +192,115 @@ margin-top: -1px;
   min-width:210px;
   max-width: 130px;
   background-image: linear-gradient(30deg,#000000,#c277ff,#000000);
-    }
-    .sk{
-/* float: left;
-padding-left: 10px;
-margin-bottom: 20px; */
-display: inline-block;
-padding-left: 10px;
-      
+    } */
+     /* this is new format for skill */
+     .card{
+      width: 200px;
+      height:100px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateY(0deg);
+     transition: transform 0.6s;
+     margin-left: 20px;
+     margin-top: 20px;
     }
     
+    .card-front , .card-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      color: #0a0907;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-front{
+      background-image: linear-gradient(30deg,#000000,#c277ff,#000000);
+    }
+    .card-back{
+      background-image: linear-gradient();
+      transform: rotateY(180deg);
+      display: block;
+      justify-content: center;
+      padding: 10px 20px;
+     
+   
+      
+    
+    }
+     .card-container:hover .card{
+    transform: rotateY(180deg);
+     }
+     .card-container{
+      perspective: 1000px;
+     }
+     
+    
+    .space{
+
+display: flex;
+/* padding-left: 25px; */
+
+
+      /* navigation bar  */
+    }
+    nav{
+      display: flex;
+      width: 100%;
+      background-color: #3f3f3f;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+    }
+    .navibar ul{
+      margin-left: 10px;
+      /* transform: translateX(-100px); */
+      display: flex;
+    }
+  
+    
+    nav li{
+      display: inline-block;
+      margin: 0 25px;
+      
+    }
+
+
+ li a{
+  text-decoration: none;
+  color: #f1f1f1;
+  
+ }
+ nav a:hover{
+  color: #ae8625;
+}
+
+@media screen and (max-width: 490px){
+  .space{
+    display: block;
+      }
+ nav{
+  display:block;
+  width:150px;
+  height: 150px;
+
+
+ }
+ nav li{
+  display:block ;
+  margin-top: 10px;
+  margin-left: 0;
+ }
+ .navibar ul{
+  display: block;
+  padding-top: 10px;
+ }
+}
+
+
+
+
+
+
